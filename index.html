@@ -1,24 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <style>
-  body {
-    font-family: sans-serif; /* 文字を見やすく */
-    text-align: center;      /* 全体を中央寄せ */
-    background-color: #f0f0f0; /* 背景を少しグレーに */
-    margin-top: 50px;
-  }
-  img {
-    border-radius: 10px;    /* 角を丸く */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 影をつける */
-  }
-</style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<h1>パリの南の写真館</h1>
-<img src="photo.jpg" width="500">    
-</body>
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パリの南の写真館 | Official Site</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* 全体のデザイン設定 */
+    body {
+      font-family: 'Noto Serif JP', serif; /* 上品な明朝体 */
+      background-color: #f8f7f2; /* キャンバスのような落ち着いた白 */
+      color: #2c2c2c;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ヘッダーの装飾 */
+    header {
+      padding: 80px 20px 40px;
+      background: linear-gradient(to bottom, #ede9df, #f8f7f2);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      letter-spacing: 0.15em;
+      margin: 0;
+      color: #5d534a;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      letter-spacing: 0.3em;
+      color: #9a8f83;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    /* メインコンテンツ（中央寄せ） */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    /* 写真のスタイル（額縁のような演出） */
+    .photo-frame {
+      position: relative;
+      display: inline-block;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      border-radius: 2px;
+      margin-bottom: 50px;
+      transition: transform 0.5s ease;
+    }
+
+    .photo-frame:hover {
+      transform: scale(1.02) rotate(1deg); /* 触ると少し傾いて浮く */
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* メッセージ部分 */
+    .description {
+      font-size: 1.2rem;
+      margin-bottom: 60px;
+      color: #4a4a4a;
+    }
+
+    /* 情報ボックス（半透明でおしゃれに） */
+    .info-card {
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(5px); /* 背景をぼかす最新の技 */
+      border: 1px solid #e2ddd3;
+      display: inline-block;
+      padding: 30px 60px;
+      border-radius: 0;
+      margin-bottom: 60px;
+    }
+
+    .info-card p {
+      margin: 5
