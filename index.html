@@ -15,7 +15,6 @@
       margin: 0;
       padding: 0;
       line-height: 1.8;
-      /* opacity: 0; を削除して、最初から見えるようにしました */
     }
 
     header {
@@ -38,6 +37,7 @@
       color: #9a8f83;
       margin-top: 10px;
       text-transform: uppercase;
+      text-align: center;
     }
 
     .container {
@@ -61,17 +61,40 @@
       display: block;
     }
 
-    .description {
-      font-size: 1.2rem;
-      margin-bottom: 60px;
+    /* カレンダーエリアのデザイン */
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px 0;
     }
 
-    .info-card {
+    .info-card, .calendar-box {
       background-color: white;
       border: 1px solid #e2ddd3;
-      display: inline-block;
-      padding: 30px 60px;
-      margin-bottom: 60px;
+      padding: 20px 30px;
+      min-width: 280px;
+      box-sizing: border-box;
+    }
+
+    .simple-calendar {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    .simple-calendar th { color: #9a8f83; font-weight: normal; }
+    .simple-calendar td { padding: 5px; border: 1px solid #fcfaf2; }
+    .calendar-note { font-size: 0.7rem; color: #9a8f83; margin-top: 10px; }
+
+    /* お問い合わせセクション */
+    .contact-section {
+      margin-top: 80px;
+      padding: 60px 20px;
+      border-top: 1px double #e2ddd3;
+      background-color: #f3f0e8;
     }
 
     .btn {
@@ -82,28 +105,8 @@
       text-decoration: none;
       letter-spacing: 0.2em;
       transition: 0.3s;
+      font-weight: bold;
     }
 
     .btn:hover {
       background-color: #8b4513;
-    }
-
-    footer {
-      padding: 40px;
-      font-size: 0.8rem;
-      color: #aaa;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>パリの南の写真館</h1>
-    <div class="subtitle">Studio du Sud de Paris</div>
-  </header>
-
-  <div class="container">
-    <div class="photo-frame">
-      <img src="photo.jpg" alt="Gallery Work" width="600">
-    </div>
